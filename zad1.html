@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie1</title>
+</head>
+<body>
+    <script>
+        // To działa
+        const inp = document.createElement("input")
+        inp.type = "color"
+        const div = document.createElement("div")
+        div.style.width = "200px"
+        div.style.height = "200px"
+
+        document.body.appendChild(div)
+        document.body.appendChild(inp)
+
+        inp.addEventListener("change", ()=>{
+            div.style.backgroundColor = inp.value
+        })
+        
+    </script>
+</body>
+</html>

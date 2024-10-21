@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie3</title>
+</head>
+<body>
+    <script>
+        // To działa
+        const inp = document.createElement("input")
+        inp.type = "number"
+        inp.placeholder = "Szerokość"
+        const inp2 = document.createElement("input")
+        inp2.type = "number"
+        inp2.placeholder = "Wysokosć"
+        const div = document.createElement("div")
+        div.style.backgroundColor = "red"
+        div.style.width = "200px"
+        div.style.height = "200px"
+
+        document.body.appendChild(div)
+        document.body.appendChild(inp)
+        document.body.appendChild(inp2)
+
+        inp.addEventListener("change", ()=>{
+            div.style.width = inp.value + "px"
+        })
+        inp2.addEventListener("change", ()=>{
+            div.style.height = inp2.value + "px"
+        })
+        
+    </script>
+</body>
+</html>
